@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hola Mundo</title>
+  <%= stylesheet_link_tag 'dashboard', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+   <h1>Parcial 1</h1>
+
+  <div class="sidebar">
+    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <%= link_to 'Administración', administracion_path %>
+    <%= link_to 'Administración de Proyectos', administracion_proyectos_path %>
+    <%= link_to 'Negociación', negociacion_path %>
+    <%= link_to 'Proceso Administrativo', proceso_administrativo_path %>
+    <%= link_to 'Manipulación', manipulacion_path %>
+    <%= link_to 'Eficacia', eficacia_path %>
+    <%= link_to 'Eficiencia', eficiencia_path %>
+    <%= link_to 'Riesgos en Proyectos', riesgo_proyectos_path %>
+    <%= link_to 'Jira', 'https://ed03e2.atlassian.net/', target: '_blank' %>
+    <%= link_to 'Alumnos', alumno_path %>
+  </div>
+
+  <button class="menu-button" onclick="showSidebar()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z"/></svg>
+  </button>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar');
+      const menuButton = document.querySelector('.menu-button');
+      sidebar.style.display = 'flex';
+      menuButton.classList.add('hide');
+    }
+
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar');
+      const menuButton = document.querySelector('.menu-button');
+      sidebar.style.display = 'none';
+      menuButton.classList.remove('hide');
+    }
+  </script>
+  <%= image_tag('project', class: 'small-image')%>
+</body>
+</html>

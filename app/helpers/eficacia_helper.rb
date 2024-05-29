@@ -1,0 +1,2 @@
+module EficaciaHelper
+end

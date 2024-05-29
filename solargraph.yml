@@ -1,0 +1,11 @@
+---
+include:
+  - "app/**/*.rb"
+  - "lib/**/*.rb"
+  - "config/**/*.rb"
+  - "test/**/*.rb"
+  - "spec/**/*.rb"
+exclude:
+  - "log/**/*"
+  - "tmp/**/*"
+  - "vendor/**/*"
