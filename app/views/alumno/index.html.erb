@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="styles/application.css" media="all" data-turbolinks-track="reload">
-</head>
-<body>
-  <h1>Daniel Abraham Sanchez Esquivel</h1>
-  <div class="contenedor-imagen">
-    <img src="images/img2.png" class="imagen-chica" alt="Imagen">
-  </div>
-  <div class="contenedor-enlace">
-    <a href="curriculum.pdf" download="curriculum.pdf">Descargar Curriculum (PDF)</a>
-  </div>
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<h1>Daniel Abraham Sanchez Esquivel</h1>
+<div class="contenedor-imagen">
+<%= image_tag('img2', class: 'imagen-chica')%>
+</div>
+<div class="contenedor-enlace">
+<%= link_to 'Descargar Curriculum (PDF)', '/curriculum.pdf', download: 'curriculum.pdf'%>
+</div>
 
-  <h1>Edgar Arturo Vallejo Corral</h1>
-  <div class="contenedor-enlace">
-    <a href="EdgarArturo.jpeg" download="EdgarArturo.jpeg">Descargar Curriculum (Imagen)</a>
-  </div>
+<h1>Edgar Arturo Vallejo Corral</h1>
+<div class="contenedor-enlace">
+<%= link_to 'Descargar Curriculum .(Imagen)', '/EdgarArturo.jpeg', download: 'EdgarArturo.jpeg'%>
+</div>
 
-  <br>
-  <br>
- <a href="<%= root_path %>">Index</a>
-</body>
-</html>
+<br>
+<br>
+<%= link_to 'Index', root_path %>
