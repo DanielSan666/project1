@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
   get 'alumno/index'
   get 'riesgo_proyectos/index'
   get 'eficiencia/index'
@@ -7,14 +8,14 @@ Rails.application.routes.draw do
   get 'proceso_administrativo/index'
   get 'negociacion/index'
   get 'administracion_proyectos/index'
-  root 'welcome#index'
+
   get 'administracion', to: 'administracion#index', as: 'administracion'
-  get 'administracion_proyectos', to: 'administracion_proyectos#index', as:'administracion_proyectos'
+  get 'administracion_proyectos', to: 'administracion_proyectos#index', as: 'administracion_proyectos'
   get 'negociacion', to: 'negociacion#index', as: 'negociacion'
   get 'proceso_administrativo', to: 'proceso_administrativo#index', as: 'proceso_administrativo'
   get 'manipulacion', to: 'manipulacion#index', as: 'manipulacion'
   get 'eficacia', to: 'eficacia#index', as: 'eficacia'
-  get 'eficiencia', to: 'eficiencia#index', as:'eficiencia', as: 'eficiencia'
+  get 'eficiencia', to: 'eficiencia#index', as: 'eficiencia'
   get 'riesgo_proyectos', to: 'riesgo_proyectos#index', as: 'riesgo_proyectos'
   get 'alumno', to: 'alumno#index', as: 'alumno'
 end

@@ -1,0 +1,37 @@
+/* Estilos para el cuerpo del texto */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px;
+  }
+  
+  /* Estilos para los títulos */
+  h2, h3 {
+    color: #007bff; /* Azul */
+  }
+  
+  /* Estilos para los párrafos */
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para la imagen */
+  .small-image {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el enlace */
+  a {
+    color: #007bff; /* Azul */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
